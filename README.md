@@ -5,7 +5,7 @@
 
 #### Feature:
 ```
-Serveo.net
+serveo.net
 ```
 #### Usage:
 ```

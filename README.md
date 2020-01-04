@@ -14,11 +14,11 @@ cd Stepbystep
 ls
 bash phisinggo.sh
 ```
-
 #### Screenshot:
 <p align="center">
   <img src="https://github.com/stepbystepexe/PhisingGo/blob/master/Screenshot.png">
 </a></p>
+
 #### Paypal:
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CLKRT5QXXFJY4&source=url
 #### LiberaPay:

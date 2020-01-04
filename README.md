@@ -1,7 +1,7 @@
  <p align="center">
   <img src="https://github.com/stepbystepexe/PhisingGo/blob/master/Logo.png" width="200"/>
 </a></p>
-<h1 align="center">Step By Step</h1>
+<h1 align="center">Phising Go</h1>
 
 # Feature:
 ```

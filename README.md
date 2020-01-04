@@ -11,6 +11,7 @@ serveo.net
 ```
 git clone https://github.com/stepbystepexe/Stepbystep
 cd Stepbystep
+ls
 bash stepbystep.sh
 ```
 #### Paypal:

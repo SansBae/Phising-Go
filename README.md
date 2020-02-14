@@ -3,11 +3,7 @@
 </a></p>
 <h1 align="center">Phising Go</h1>
 
-#### Feature:
-```
-serveo.net
-```
-#### Usage:
+#### Cara Menginstall:
 ```
 git clone https://github.com/stepbystepexe/PhisingGo
 cd PhisingGo

@@ -36,7 +36,7 @@ bash phisinggo.sh
 ```
 #### Screenshot:
 <p align="center">
-  <img src="https://github.com/stepbystepexe/PhisingGo/blob/master/Screenshoot.png">
+  <img src="https://github.com/stepbystepexe/PhisingGo/blob/master/Screenshot.png">
 </a></p>
 
 #### Paypal:

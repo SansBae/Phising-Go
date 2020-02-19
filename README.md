@@ -10,7 +10,7 @@ Versi       : 3.4 (Update: 06 Juni 2020, 1:30 PM)
 Tanggal     : 25 Desember 2019
 Mod         : Nedi Senja
 Tujuan      : Mencuri akun dengan metode phising
-              menggunakan tool PhisingGo
+              menggunakan tool PhisingGo.
 Terimakasih : Allah SWT.
               FR13NDS, & seluruh
               manusia seplanet bumi

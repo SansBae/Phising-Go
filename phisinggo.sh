@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # PhisingGo
 # Mod by Nedi Senja
 # Github: https://github.com/stepbystepexe/PhisingGo

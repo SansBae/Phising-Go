@@ -1,5 +1,7 @@
 # PhisingGo:
-Phising adalah suatu metode untuk melakukan penipuan dengan mengelabui target dengan maksud untuk mencuri akun target. Phising bisa dikatakan mencuri informasi penting dengan mengambil alih akun korban untuk maksud tertentu.
+**```Phising```** adalah suatu metode untuk melakukan penipuan dengan mengelabui target dengan maksud untuk mencuri akun target. Phising bisa dikatakan mencuri informasi penting dengan mengambil alih akun korban untuk maksud tertentu.
+#### Screenshot:
+![](./Logo.png)
 #### Informasi:
 ```
 Nama        : PhisingGo
@@ -19,11 +21,9 @@ NB          : Manusia gax ada yang sempurna
 
 [ Gunakan tool ini dengan bijak ]
 ```
-
 #### Daftar Fitur:
 + serveo.net
 + ngrok.io
-
 #### Cara Menginstall:
 ```
 git clone https://github.com/stepbystepexe/PhisingGo

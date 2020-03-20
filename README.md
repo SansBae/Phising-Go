@@ -1,7 +1,7 @@
 # PhisingGo:
 **```Phising```** adalah suatu metode untuk melakukan penipuan dengan mengelabui target dengan maksud untuk mencuri akun target. Phising bisa dikatakan mencuri informasi penting dengan mengambil alih akun korban untuk maksud tertentu.
 #### Screenshot:
-![](./Logo.png)
+![](./Skrinsut.png)
 #### Informasi:
 ```
 Nama        : PhisingGo

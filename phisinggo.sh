@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 # PhisingGo
 # Mod by Nedi Senja
 # Github: https://github.com/stepbystepexe/PhisingGo
@@ -26,28 +26,29 @@ dependencies(){
 fi
 }
 banner(){
-printf "\n
-\e[0;37m █▀█ █ █ ▀█▀ █▀▀ ▀█▀ █▀█ █▀▀   \e[0;34m█▀▀ █▀█  \e[0;31m▒▒▒▒▒▒▒▒▄▄▄▄▄▄▄▄▒▒▒▒▒▒\e[0m
-\e[0;37m █▀▀ █▀█  █  ▀▀█  █  █ █ █ █   \e[0;34m█ █ █ █  \e[0;31m▒▒█▒▒▒▄██████████▄▒▒▒▒\e[0m
-\e[0;37m ▀   ▀ ▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀ ▀ ▀▀▀   \e[0;34m▀▀▀ ▀▀▀  \e[0;31m▒█▐▒▒▒████████████▒▒▒▒\e[0m
-\e[0m[\e[1;2;96m01\e[0m] \e[1;77mInstagram \e[0m     \e[0m[\e[1;2;96m19\e[0m] \e[1;77mPinterest\e[0m      \e[0;31m▒▌▐▒▒██▄▀██████▀▄██▒▒▒\e[0m
-\e[0m[\e[1;2;96m02\e[0m] \e[1;77mFacebook  \e[0m     \e[0m[\e[1;2;96m20\e[0m] \e[1;77meBay     \e[0m      \e[0;31m▐┼▐▒▒██▄▄▄▄██▄▄▄▄██▒▒▒\e[0m
-\e[0m[\e[1;2;96m03\e[0m] \e[1;77mSnapchat  \e[0m     \e[0m[\e[1;2;96m21\e[0m] \e[1;77mBitcoin  \e[0m      \e[0;31m▐┼▐▒▒██████████████▒▒▒\e[0m
-\e[0m[\e[1;2;96m04\e[0m] \e[1;77mTwitter   \e[0m     \e[0m[\e[1;2;96m22\e[0m] \e[1;77mVerizon  \e[0m      \e[0;31m▐▄▐████─▀▐▐▀█─█─▌▐██▄▒\e[0m
-\e[0m[\e[1;2;96m05\e[0m] \e[1;77mGithub    \e[0m     \e[0m[\e[1;2;96m23\e[0m] \e[1;77mDropBox  \e[0m      \e[0;31m▒▒█████──────────▐███▌\e[0m
-\e[0m[\e[1;2;96m06\e[0m] \e[1;77mGoogle    \e[0m     \e[0m[\e[1;2;96m24\e[0m] \e[1;77mAdobe    \e[0m      \e[0;31m▒▒█▀▀██▄█─▄───▐─▄███▀▒\e[0m
-\e[0m[\e[1;2;96m07\e[0m] \e[1;77mSpotify   \e[0m     \e[0m[\e[1;2;96m25\e[0m] \e[1;77mShopify  \e[0m      \e[0;31m▒▒█▒▒███████▄██████▒▒▒\e[0m
-\e[0m[\e[1;2;96m08\e[0m] \e[1;77mNetflix   \e[0m     \e[0m[\e[1;2;96m26\e[0m] \e[1;77mMessenger\e[0m      \e[0;31m▒▒▒▒▒██████████████▒▒▒\e[0m
-\e[0m[\e[1;2;96m09\e[0m] \e[1;77mPayPal    \e[0m     \e[0m[\e[1;2;96m27\e[0m] \e[1;77mGitlab   \e[0m      \e[0;31m▒▒▒▒▒█████████▐▌██▌▒▒▒\e[0m
-\e[0m[\e[1;2;96m10\e[0m] \e[1;77mOrigin    \e[0m     \e[0m[\e[1;2;96m28\e[0m] \e[1;77mTwitch   \e[0m      \e[0;31m▒▒▒▒▒▐▀▐▒▌▀█▀▒▐▒█▒▒▒▒▒\e[0m
-\e[0m[\e[1;2;96m11\e[0m] \e[1;77mSteam     \e[0m     \e[0m[\e[1;2;96m28\e[0m] \e[1;77mMySpace  \e[0m      \e[0;31m▒▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▌▒▒▒▒▒\e[0m
-\e[0m[\e[1;2;96m12\e[0m] \e[1;77mYahoo     \e[0m     \e[0m[\e[1;2;96m30\e[0m] \e[1;77mBadoo    \e[0m
-\e[0m[\e[1;2;96m13\e[0m] \e[1;77mLinkedin  \e[0m     \e[0m[\e[1;2;96m31\e[0m] \e[1;77mVk       \e[0m      \e[0m[\e[1;93m&\e[0m] LISENSI\e[0m
-\e[0m[\e[1;2;96m14\e[0m] \e[1;77mProtonmail\e[0m     \e[0m[\e[1;2;96m32\e[0m] \e[1;77mYandex   \e[0m      \e[0m[\e[1;94m#\e[0m] Informasi\e[0m
-\e[0m[\e[1;2;96m15\e[0m] \e[1;77mWordpress \e[0m     \e[0m[\e[1;2;96m33\e[0m] \e[1;77mdevianART\e[0m      \e[0m[\e[1;92m*\e[0m] Perbarui\e[0m
-\e[0m[\e[1;2;96m16\e[0m] \e[1;77mMicrosoft \e[0m     \e[0m[\e[1;2;96m34\e[0m] \e[1;77mWattpad  \e[0m      \e[0m[\e[1;91m-\e[0m] Keluar\e[0m
-\e[0m[\e[1;2;96m17\e[0m] \e[1;77mFollowers \e[0m     \e[0m[\e[1;2;96m35\e[0m] \e[1;77mGame     \e[0m
-\e[0m[\e[1;2;96m18\e[0m] \e[1;77mOutlook   \e[0m     \e[0m[\e[1;2;96m36\e[0m] \e[1;77mCustom   \e[0m      \e[0;90m▀▀▀\e[0;31m▀▀▀\e[0;32m▀▀▀\e[0;33m▀▀▀\e[0;34m▀▀▀\e[0;35m▀▀▀\e[0;36m▀▀▀\e[0;37m▀▀▀\n\n"
+printf "                                        \e[0;33m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+\e[0;36;2m █▀█ █ █ ▀█▀ █▀▀ ▀█▀ █▀█ █▀▀   \e[0;37m█▀▀ █▀█  \e[0;33m▐\e[0;34m▒▒▒▒▒▒▒▒\e[0;31m▄▄▄▄▄▄▄▄\e[0;34m▒▒▒▒▒▒\e[0;33m▌\e[0m
+\e[0;36;2m █▀▀ █▀█  █  ▀▀█  █  █ █ █ █   \e[0;37m█ █ █ █  \e[0;33m▐\e[0;34m▒▒\e[0;31m█\e[0;34m▒▒▒\e[0;31m▄██████████▄\e[0;34m▒▒▒▒\e[0;33m▌\e[0m
+\e[0;36;2m ▀   ▀ ▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀ ▀ ▀▀▀ \e[0;90m▀ \e[0;37m▀▀▀ ▀▀▀  \e[0;33m▐\e[0;34m▒\e[0;31m█▐\e[0;34m▒▒▒\e[0;31m████████████\e[0;34m▒▒▒▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m01\e[0m] \e[1;77mInstagram \e[0m     \e[0m[\e[1;2;96m20\e[0m] \e[1;77mPinterest\e[0m      \e[0;33m▐\e[0;31m▒\e[0;31m▌▐\e[0;34m▒▒\e[0;31m██▄▀██████▀▄██\e[0;34m▒▒▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m02\e[0m] \e[1;77mFacebook  \e[0m     \e[0m[\e[1;2;96m21\e[0m] \e[1;77meBay     \e[0m      \e[0;33m▐\e[0;31m▐┼▐\e[0;34m▒▒\e[0;31m██▄▄▄▄██▄▄▄▄██\e[0;34m▒▒▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m03\e[0m] \e[1;77mSnapchat  \e[0m     \e[0m[\e[1;2;96m22\e[0m] \e[1;77mBitcoin  \e[0m      \e[0;33m▐\e[0;31m▐┼▐\e[0;34m▒▒\e[0;31m██████████████\e[0;34m▒▒▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m04\e[0m] \e[1;77mTwitter   \e[0m     \e[0m[\e[1;2;96m23\e[0m] \e[1;77mVerizon  \e[0m      \e[0;33m▐\e[0;31m▐▄▐████─▀▐▐▀█─█─▌▐██▄\e[0;34m▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m05\e[0m] \e[1;77mGithub    \e[0m     \e[0m[\e[1;2;96m24\e[0m] \e[1;77mDropBox  \e[0m      \e[0;33m▐\e[0;34m▒▒\e[0;31m█████──────────▐███▌\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m06\e[0m] \e[1;77mGoogle    \e[0m     \e[0m[\e[1;2;96m25\e[0m] \e[1;77mAdobe    \e[0m      \e[0;33m▐\e[0;34m▒▒\e[0;31m█▀▀██▄█─▄───▐─▄███▀\e[0;34m▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m07\e[0m] \e[1;77mSpotify   \e[0m     \e[0m[\e[1;2;96m26\e[0m] \e[1;77mShopify  \e[0m      \e[0;33m▐\e[0;34m▒▒\e[0;31m█\e[0;34m▒▒\e[0;31m███████▄██████\e[0;34m▒▒▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m08\e[0m] \e[1;77mNetflix   \e[0m     \e[0m[\e[1;2;96m27\e[0m] \e[1;77mMessenger\e[0m      \e[0;33m▐\e[0;34m▒▒▒▒▒\e[0;31m██████████████\e[0;34m▒▒▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m09\e[0m] \e[1;77mPayPal    \e[0m     \e[0m[\e[1;2;96m28\e[0m] \e[1;77mGitlab   \e[0m      \e[0;33m▐\e[0;34m▒▒▒▒▒\e[0;31m█████████▐▌██\e[0;31m▌\e[0;34m▒▒▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m10\e[0m] \e[1;77mOrigin    \e[0m     \e[0m[\e[1;2;96m29\e[0m] \e[1;77mTwitch   \e[0m      \e[0;33m▐\e[0;34m▒▒▒▒▒\e[0;31m▐▀▐\e[0;34m▒\e[0;31m▌▀█▀\e[0;34m▒\e[0;31m▐\e[0;34m▒\e[0;31m█\e[0;34m▒▒▒▒▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m11\e[0m] \e[1;77mSteam     \e[0m     \e[0m[\e[1;2;96m30\e[0m] \e[1;77mMySpace  \e[0m      \e[0;33m▐\e[0;34m▒▒▒▒▒▒▒▒▒▒▒\e[0;31m▐\e[0;34m▒▒▒▒\e[0;31m\e[0;31m▌\e[0;34m▒▒▒▒▒\e[0;33m▌\e[0m
+\e[0m[\e[1;2;96m12\e[0m] \e[1;77mYahoo     \e[0m     \e[0m[\e[1;2;96m31\e[0m] \e[1;77mBadoo    \e[0m      \e[0;33m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+\e[0m[\e[1;2;96m13\e[0m] \e[1;77mLinkedin  \e[0m     \e[0m[\e[1;2;96m32\e[0m] \e[1;77mVk       \e[0m
+\e[0m[\e[1;2;96m14\e[0m] \e[1;77mProtonmail\e[0m     \e[0m[\e[1;2;96m33\e[0m] \e[1;77mYandex   \e[0m      \e[0m[\e[1;93m&\e[0m] LISENSI\e[0m
+\e[0m[\e[1;2;96m15\e[0m] \e[1;77mWordpress \e[0m     \e[0m[\e[1;2;96m34\e[0m] \e[1;77mdevianART\e[0m      \e[0m[\e[1;94m#\e[0m] Informasi\e[0m
+\e[0m[\e[1;2;96m16\e[0m] \e[1;77mMicrosoft \e[0m     \e[0m[\e[1;2;96m35\e[0m] \e[1;77mWattpad  \e[0m      \e[0m[\e[1;92m*\e[0m] Perbarui\e[0m
+\e[0m[\e[1;2;96m17\e[0m] \e[1;77mFollowers \e[0m     \e[0m[\e[1;2;96m36\e[0m] \e[1;77mGame     \e[0m      \e[0m[\e[1;91m-\e[0m] Keluar\e[0m
+\e[0m[\e[1;2;96m18\e[0m] \e[1;77mPispon    \e[0m     \e[0m[\e[1;2;96m37\e[0m] \e[1;77mCustom   \e[0m
+\e[0m[\e[1;2;96m19\e[0m] \e[1;77mOutlook   \e[0m     \e[0m[\e[1;2;96m38\e[0m] \e[1;77mOthers   \e[0m      "
 }
 menu(){
     read -p $'\e[0m(\e[105;77;1m/\e[0m) \e[1;77mMasukan opsi: \e[0m\en' option
@@ -236,13 +237,13 @@ createpage(){
     default_user_text="Pengguna:"
     default_pass_text="Sandi:"
     default_sub_text="Log-In"
-        read -p $'\e[0m[\e[1;92m*\e[0m] \e[1;77mTitle 1 \e[0m(Default: Wi-fi Sudah Kadaluarsa): \e[1;77m' cap1
+        read -p $'\n\e[0m[\e[1;92m*\e[0m] \e[1;77mTitle 1 \e[0m(Default: Wi-fi Sudah Kadaluarsa): \e[1;77m' cap1
         cap1="${cap1:-${default_cap1}}"
-            read -p $'\e[0m[\e[1;93m*\e[0m] \e[1;77mTitle 2 \e[0m(Default: Mohon Login Kembali.): \e[1;77m' cap2
+            read -p $'\e[0m[\e[1;93m*\e[0m] \e[1;77mTitle 2 \e[0m(Default: Mohon Login Kembali): \e[1;77m' cap2
             cap2="${cap2:-${default_cap2}}"
-                read -p $'\e[0m[\e[1;94m*\e[0m] \e[1;77mPengguna gagal \e[0m(Default: Pengguna:): \e[1;77m' user_text
+                read -p $'\e[0m[\e[1;94m*\e[0m] \e[1;77mPengguna gagal \e[0m(Default: Pengguna): \e[1;77m' user_text
                 user_text="${user_text:-${default_user_text}}"
-                    read -p $'\e[0m[\e[1;95m*\e[0m] \e[1;77mSandi gagal \e[0m(Default: Sandi:): \e[1;77m' pass_text
+                    read -p $'\e[0m[\e[1;95m*\e[0m] \e[1;77mSandi gagal \e[0m(Default: Sandi): \e[1;77m' pass_text
                     pass_text="${pass_text:-${default_pass_text}}"
                         read -p $'\e[0m[\e[1;96m*\e[0m] \e[1;77mKlik gagal \e[0m(Default: Log-In): \e[1;77m' sub_text
                         sub_text="${sub_text:-${default_sub_text}}"

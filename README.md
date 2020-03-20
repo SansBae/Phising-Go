@@ -1,8 +1,5 @@
- <p align="center">
-  <img src="https://github.com/stepbystepexe/PhisingGo/blob/master/Logo.png" width="200"/>
-</a></p>
-<h1 align="center">Phising Go</h1>
-
+# PhisingGo:
+Phising adalah suatu metode untuk melakukan penipuan dengan mengelabui target dengan maksud untuk mencuri akun target. Phising bisa dikatakan mencuri informasi penting dengan mengambil alih akun korban untuk maksud tertentu.
 #### Informasi:
 ```
 Nama        : PhisingGo
@@ -25,7 +22,7 @@ NB          : Manusia gax ada yang sempurna
 
 #### Daftar Fitur:
 + serveo.net
-+ ngrok
++ ngrok.io
 
 #### Cara Menginstall:
 ```
@@ -34,12 +31,11 @@ cd PhisingGo
 ls
 bash phisinggo.sh
 ```
-#### Screenshot:
-<p align="center">
-  <img src="https://github.com/stepbystepexe/PhisingGo/blob/master/Skrinsut.png">
-</a></p>
-
+#### Kontak:
++ Email d_q16x@outlook.co.id
++ WhatsApp https://tinyurl.com/wel4alo
 #### Paypal:
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CLKRT5QXXFJY4&source=url
++ Onclick https://bit.ly/3dcEQcN
 #### LiberaPay:
 <noscript><a href="https://liberapay.com/stepbystepexe/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+>**Created by Nedi Senja**

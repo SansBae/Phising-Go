@@ -47,7 +47,7 @@
 ```text
 Nama        : PhisingGo
 Versi       : 1.1 (Update: 30 Januari 2020, 3:30 AM)
-Tanggal     : 01 Februari 2019
+Tanggal     : 20 Juli 2019
 Mod         : Nedi Senja
 Tujuan      : Mencuri akun menggunakan metode
               Modern Phising PhisingGo.
@@ -63,7 +63,7 @@ NB          : Manusia gax ada yang sempurna
 [ Gunakan tool ini dengan bijak ]
 ```
 
-### Menu:
+### Fitur:
 + ip-tracker
 + phising-fage
 

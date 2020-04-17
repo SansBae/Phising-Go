@@ -47,7 +47,7 @@
 </p>
 </h5>
 
-### Informasi:
+### Information:
 ```text
 Name        : PhisingGo
 Version     : 1.1 (Update: 30 January 2020, 3:30 AM)

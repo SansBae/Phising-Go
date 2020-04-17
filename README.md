@@ -3,7 +3,7 @@
  </p>
 <p align="center">
   <img src="Logo.png" width="100">
-  PhishingGo tool is a method of committing fraud by tricking the target with the intention of stealing the target account. Phishing can be said to steal important information by taking over the victim's account for a specific purpose.
+  PhishingGo tool. phizing is a method of committing fraud by tricking the target with the intention of stealing the target account. Phishing can be said to steal important information by taking over the victim's account for a specific purpose.
 </p>
 <p align="center">
   <a href="https://www.gnu.org/software/bash/">
@@ -24,8 +24,8 @@
   <a href="https://github.com/stepbystepexe/PhisingGo/issues">
     <img src="https://img.shields.io/badge/Issues-1-yellowgreen.svg">
   </a>
-  <a href="https://github.com/stepbystepexe/PhisingGo/security/advisories">
-    <img src="https://img.shields.io/badge/Security-Patch-ff69b4.svg">
+  <a href="https://github.com/stepbystepexe/PhisingGo/security/policy">
+    <img src="https://img.shields.io/badge/Security-Policy-ff69b4.svg">
   </a>
   <a href="https://opensource.org">
     <img src="https://img.shields.io/badge/Open%20Source-●-lightgray.svg">

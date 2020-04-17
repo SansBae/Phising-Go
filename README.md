@@ -32,7 +32,7 @@
   </a>
 </p>
 <p align="center">
-  Tampilan
+  Screenshot
 </p>
 <p align="center">
   <img src="Skrinsut.png" width="300">
@@ -49,29 +49,29 @@
 
 ### Informasi:
 ```text
-Nama        : PhisingGo
-Versi       : 1.1 (Update: 30 Januari 2020, 3:30 AM)
-Tanggal     : 20 Juli 2019
+Name        : PhisingGo
+Version     : 1.1 (Update: 30 January 2020, 3:30 AM)
+Tanggal     : 20 July 2019
 Mod         : Nedi Senja
-Tujuan      : Mencuri akun menggunakan metode
+Purpose     : Stealing accounts using the method
               Modern Phising PhisingGo.
 Terimakasih : Allah SWT.
-              FR13NDS, & seluruh
-              manusia seplanet bumi
-NB          : Manusia gax ada yang sempurna
-              sama kaya yang mod tool ini.
-              Silahkan laporkan kritik atau saran
-              Ke - Email: d_q16x@outlook.co.id
-                 - WhatsApp: https://tinyurl.com/wel4alo
+              FR13NDS, & all over
+              humans on planet earth
+NB          : Humans are not perfect
+              as rich as this tool.
+              Please report criticism or suggestions
+              To - Email: d_q16x@outlook.co.id
+                 - WhatsApp: tinyurl.com/wel4alo
 
-[ Gunakan tool ini dengan bijak ]
+[ Use this tool wisely. Thanks ]
 ```
 
-### Fitur:
+### Features:
 + ip-tracker
 + phising-fage
 
-### Installisasi:
+### Installation:
 ```text
 git clone https://github.com/stepbystepexe/PhisinggGo
 cd PhisingGo
@@ -79,11 +79,11 @@ ls
 chmod +x
 ./phisinggo.sh
 ```
-### Kontak:
+### Contact:
 
 <h5> <a href="http://d_q16x@outlook.co.id">Email: d_q16x@outlook.co.id</a>
 </h5>
-<h5> <a href="https://tinyurl.com/wel4alo">WhatsApp: https://tinyurl.com/wel4alo</a>
+<h5> <a href="https://tinyurl.com/wel4alo">WhatsApp: tinyurl.com/wel4alo</a>
 </h5>
 
 ### LiberaPay:

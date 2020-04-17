@@ -1,9 +1,13 @@
-<h1 align="center">PhisingGo</h1>
-<h5 align="center">Phising adalah suatu metode untuk melakukan penipuan dengan mengelabui target dengan maksud untuk mencuri akun target. Phising bisa dikatakan mencuri informasi penting dengan mengambil alih akun korban untuk maksud tertentu.</h5>
-
+<p align="left">
+  <a><img title="Built With Love" src="https://forthebadge.com/images/badges/built-with-love.svg" ></a>
+ </p>
+<p align="center">
+  <img src="Logo.png" width="100">
+  Anonymous is a decentralized international hac acktivist group formed in 2003. Its members can be distinguished in public by wearing a Guy Fawkes mask or commonly known as V for Vendetta
+</p>
 <p align="center">
   <a href="https://www.gnu.org/software/bash/">
-    <img src="https://img.shields.io/badge/Language-Shell-success.svg">
+    <img src="https://img.shields.io/badge/Bash-5.0.11-success.svg">
   </a>
   <a href="https://github.com/stepbystepexe/PhisingGo/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-GPL%203-red.svg">
@@ -24,24 +28,24 @@
     <img src="https://img.shields.io/badge/Security-Patch-ff69b4.svg">
   </a>
   <a href="https://opensource.org">
-    <img src="https://img.shields.io/badge/Open%20Source-●-yellow.svg">
+    <img src="https://img.shields.io/badge/Open%20Source-●-lightgray.svg">
   </a>
 </p>
-
-<h4 align="center">Tampilan</h4>
 <p align="center">
-  <img src="https://github.com/stepbystepexe/PhisingGo/blob/master/Skrinsut.png" width="300">
-</a></p>
-
+  Tampilan
+</p>
+<p align="center">
+  <img src="Skrinsut.png" width="300">
+</a>
+</p>
 <h5>
 <p align="center">
   Made with ❤️ by <a href="https://github.com/stepbystepexe">Nedi Senja</a>
-</h5>
 </p>
-
 <p align="center">
  <img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Stepbystepexe%2FPhisingGo" alt="Twitter">
 </p>
+</h5>
 
 ### Informasi:
 ```text

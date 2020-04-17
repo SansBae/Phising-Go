@@ -55,7 +55,7 @@ Tanggal     : 20 July 2019
 Mod         : Nedi Senja
 Purpose     : Stealing accounts using the method
               Modern Phising PhisingGo.
-Terimakasih : Allah SWT.
+Thankyou    : Allah SWT.
               FR13NDS, & all over
               humans on planet earth
 NB          : Humans are not perfect

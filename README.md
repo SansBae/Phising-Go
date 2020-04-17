@@ -3,7 +3,7 @@
  </p>
 <p align="center">
   <img src="Logo.png" width="100">
-  Anonymous is a decentralized international hac acktivist group formed in 2003. Its members can be distinguished in public by wearing a Guy Fawkes mask or commonly known as V for Vendetta
+  Phishing is a method of committing fraud by tricking the target with the intention of stealing the target account. Phishing can be said to steal important information by taking over the victim's account for a specific purpose.
 </p>
 <p align="center">
   <a href="https://www.gnu.org/software/bash/">

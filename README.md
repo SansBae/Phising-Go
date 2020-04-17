@@ -1,13 +1,13 @@
 <p align="left">
-  <a><img title="Built With Love" src="https://forthebadge.com/images/badges/built-with-love.svg" ></a>
+  <a><img title="Built With Love" src="https://forthebadge.com/images/badges/fuck-it-ship-it.svg" ></a>
  </p>
 <p align="center">
   <img src="Logo.png" width="100">
-  Phishing is a method of committing fraud by tricking the target with the intention of stealing the target account. Phishing can be said to steal important information by taking over the victim's account for a specific purpose.
+  PhishingGo is a method of committing fraud by tricking the target with the intention of stealing the target account. Phishing can be said to steal important information by taking over the victim's account for a specific purpose.
 </p>
 <p align="center">
   <a href="https://www.gnu.org/software/bash/">
-    <img src="https://img.shields.io/badge/Bash-5.0.11-success.svg">
+    <img src="https://img.shields.io/badge/Bash-5.0-success.svg">
   </a>
   <a href="https://github.com/stepbystepexe/PhisingGo/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-GPL%203-red.svg">

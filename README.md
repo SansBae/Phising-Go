@@ -50,7 +50,7 @@
 ### Information:
 ```text
 Name        : PhisingGo
-Version     : 1.1 (Update: 30 January 2020, 3:30 AM)
+Version     : 1.1 (Update: 30 January 2020, 3:31 AM)
 Tanggal     : 20 July 2019
 Mod         : Nedi Senja
 Purpose     : Stealing accounts using the method

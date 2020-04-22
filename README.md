@@ -13,11 +13,10 @@
 [![Issues Welcome](https://img.shields.io/badge/issues%20open-welcome-brightgreen.svg)](https://github.com/stepbystepexe/Quotes/issues)
 
 <p align="center">
-  <sub><b>Screenshot</sub><b>
+  <sub><b>Screenshot</sub></b>
 </p>
 <p align="center">
   <img src="Skrinsut.png" width="300">
-</a>
 </p>
 <h5>
 <p align="center">

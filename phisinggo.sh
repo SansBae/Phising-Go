@@ -394,8 +394,8 @@ printf "\e[0m[\e[1;95m*\e[0m] \e[0;1;77mWaiting victim open the link ...\e[0m\n"
     sleep 1
 done
 }
-#checkroot
-#dependencies
+checkroot
+dependencies
     clearscreen
     banner
     menu

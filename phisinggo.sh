@@ -5,7 +5,7 @@
 trap 'echo;stop;exit 1' 2
 checkroot(){
 if [[ "$(id -u)" -ne 0 ]]; then
-    printf "\e[0m[\e[1;91m!\e[0m] \e[1;77mPlease, run program as root!\n\n\e[0m"
+    printf "\e[0m[\e[1;91m!\e[0m] \e[1;77mPlease, run this program as root!\n\n\e[0m"
     exit 1
 fi
 }

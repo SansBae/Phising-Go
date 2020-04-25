@@ -30,7 +30,7 @@
 ### Information:
 ```text
 Name        : PhisingGo
-Version     : 1.1 (Update: 30 January 2020, 3:31 AM)
+Version     : 1.1 (Update: 30 January 2020, 3:10 AM)
 Tanggal     : 20 July 2019
 Author      : The Linux Choice
 Purpose     : Stealing accounts using the method

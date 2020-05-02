@@ -4,7 +4,7 @@
 <p align="center">
 <sup>
   <img src="Logo.png" width="100">
-  PhishingGo tool. phising is a method of committing fraud by tricking the target with the intention of stealing the target account. Phishing can be said to steal important information by taking over the victim's account for a specific purpose.
+  PhishingGo tool. phising is a method of committing fraud by tricking the target with the intention of stealing the target account. Phishing can be said to steal important information by taking over the victims account for a specific purpose.
 </sup>
 </p>
 
